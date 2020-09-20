@@ -1,0 +1,22 @@
+---
+# tasks file for 1mr.rc_local
+- name: update init script
+  template:
+    src: etc/rc.local.j2
+    dest: /etc/rc.local
+    owner: root
+    group: root
+    mode: 0755
+    validate: '/usr/bin/env sh -n %s'
+  notify: start rc.local
+  tags:
+    - configure_rc_local
+    - rc_local_configure
+
+- name: enable service
+  service:
+    name: rc.local
+    enabled: true
+  when: ansible_service_mgr == 'systemd'
+  tags:
+    - rc_local_enable

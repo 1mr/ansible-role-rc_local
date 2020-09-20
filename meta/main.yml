@@ -1,0 +1,16 @@
+---
+galaxy_info:
+  role_name: rc_local
+  author: Stas Stavnichuk
+  description: configure rc.local
+  license: MIT
+  min_ansible_version: 2.5
+  platforms:
+  - name: Debian
+    versions:
+    - buster
+    - jessie
+  galaxy_tags:
+    - zabbix
+    - debian
+    - system

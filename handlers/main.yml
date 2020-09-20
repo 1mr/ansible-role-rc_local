@@ -1,0 +1,6 @@
+---
+# handlers file for 1mr.rc_local
+- name: start rc.local
+  service:
+    name: rc.local
+    state: started
