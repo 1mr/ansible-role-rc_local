@@ -1,4 +1,4 @@
-# strongswan
+# rc_local
 
 [![Build Status](https://travis-ci.com/1mr/ansible-role-rc_local.svg?branch=master)](https://travis-ci.com/1mr/ansible-role-rc_local)
 
